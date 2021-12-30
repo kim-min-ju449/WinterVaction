@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <title>비디오 배경</title>
+    <style>
+    @font-face {
+        font-family: 'GilbeotRainbow';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/GilbeotRainbow.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    body{
+        margin:0;
+        font-family: 'GilbeotRainbow';
+        font-weight:300;
+        
+    }
+    a{
+        text-decoration: none;
+        
+    }
+    /*BG video*/
+    .video-frame{}
+    .video-frame video{
+        position:fixed;
+        min-width:100%;
+        min-height:100%;
+        z-index:-1;
+    }
+    .logo{
+        position:absolute;
+        top:50px;
+        left:100px;
+    }
+    /* Heading */
+    .heading{
+        position:absolute;
+        width:700px;
+        left:100px;
+        bottom:100px;
+        animation:showing 2s linear;
+        animation-fill-mode:both;
+        
+    }
+    .heading h1{
+        font-size: 60px;
+        margin:0;
+    }
+    .heading h1 span{
+        display: block;
+        color:darkblue;
+    }
+    .heading p{
+        line-height:1.5em;
+    }
+    .btn-book,
+    .btn-learn{
+        background-color:#fff;
+        color:#222;
+        text-transform: uppercase;
+        width:150px;
+        display:inline-block;
+        padding:5px;
+        text-align:center;
+        border-radius: 5px;
+        margin-right:5px;
+        transition:0.3s;
+    }
+    .btn-learn{
+        background-color:transparent;
+        color:#fff;
+        border:2px solid white;
+    }
+    .btn-book:hover{
+        background-color:#000;
+        color:#fff;
+        border-color:transparent;
+    }
+    .btn-learn:hover{
+        background-color:white;
+        color:#000;
+    }
+
+    /*anniversarr*/
+    .anniversarr{
+        position:absolute;
+        right:100px;
+        bottom:50px;
+        text-align:center;
+        animation:showing2 2s 1s linear;
+        animation-fill-mode:both;
+    }
+    .anniversarr em{
+        display:block;
+        font-style:normal;
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin-bottom:-20px;
+}
+    .anniversarr span{
+        font-family: '국립박물관문화재단클래식B';
+        font-size: 120px;
+    }
+
+    @keyframes showing{
+        0%{
+            opacity:0 ;
+            margin-left:-100px;
+        }
+        100%{
+            opacity:1;
+            margin-left:0 ;
+        }
+    }
+    @keyframes showing2{
+        0%{
+            opacity:0 ;
+            margin-right:-100px;
+        }
+        100%{
+            opacity:1;
+            margin-right:0 ;
+        }
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="video-frame">
+            <video src="Beach.mp4" autoplay muted loop poster=""></video>
+        </div>
+        <div class="logo">
+            <img src="https://cdn.pixabay.com/photo/2012/04/26/19/04/map-42871_1280.png" width="100px" height="100px">
+        </div>
+        <div class="heading">
+            <h1>Wave Ocean</h1>
+            <p>The Atlantic Ocean is situated between the Americas and European/African continents. Atlantic Ocean is the second largest and saltiest ocean in the world. It resembles an S-shape between the Americas, Europe and Africa. “Atlantic” originated from the Greek god “Atlas” who carried the sky for eternity.</p>
+            <a class="btn-book" href="#none">LEARN MORE</a>
+            <a class="btn-learn" href="#">LOCATION</a>
+        </div>
+        <div class="anniversarr">
+            <em>Anniversarr</em><span>50</span>
+        </div>
+    </div>
+</body>
+</html>
