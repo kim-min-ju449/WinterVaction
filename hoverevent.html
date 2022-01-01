@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+        line-height:1.5em;
+        font-weight:300;
+        margin:0;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        height:100vh;
+        }
+        a{
+            text-decoration: none;
+            color:#fff;
+        }
+        .grb a{
+            border: 1px solid green;
+            width:300px;
+            display:block;
+            height:40px;
+            position:relative;
+            overflow:hidden;
+        }
+        .grb a:before,
+        .grb a:after{
+            content:attr(data-text);/*content 없으면 아무것도 작동 안한다함*/
+            position:absolute;
+            width:inherit;
+            transition:0.3s;
+            text-align:center;
+            line-height:40px;
+            color:#fff;
+            text-transform: uppercase;
+        }
+        .grb a:before{
+            background-color:crimson;
+        }
+        .grb a:after{
+            background-color:royalblue;
+            top:100%;
+        }
+        .grb a:hover:before{
+            top:-100%;
+        }
+        .grb a:hover:after{
+            top:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="grb">
+        <a href="#" data-text="CodingWorks Online Class"></a>
+    </div>
+</body>
+</html>
