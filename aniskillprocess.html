@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <Style>
+        a{
+            text-decoration:none;
+        }
+        .skill-progress{
+            width:500px;
+            padding:20px;
+            background-color: #333;
+            border-radius: 10px;
+            color:#fff;
+            box-shadow: 0 20px 50 rgba(0,0,0,0.08);
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-500, -50%);
+        }
+        .item{
+            
+        }
+        .item p{
+            border: 1px solid #fff;
+            overflow:hidden;
+            border: 1px solid #fff;
+        }
+        .items p{
+
+        }
+        .skill-process h1{
+            text-align:center;
+        }
+        .item p span{
+             
+        }
+        .item p span:nth-child(1){
+            float:left;
+        }
+        .item p span:nth-child(2){
+            float:right;
+        }
+        .progress{
+            border:1px solid #6cd4c4;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .progress-level{
+            width:90%;
+            height: 10px;
+            background:linear-gradient(to right, crimson, gold);
+            animation-name: ani;
+            animation-duration: 1s;
+        }
+        @keyframes ani{
+            0%{
+                width:0;
+            }
+        }
+        
+    </Style>
+</head>
+<body>
+    <div class="skill-progress">
+        <h1>SOFTWARE SKILLS</h1>
+        <div class="item">
+            <p>
+            <span>HTML</span><span>90%</span>
+        </p>
+        <div class="progress">
+            <div class="progress-level" style="width:90%"></div>
+        </div>
+        </div>
+        <div class="item">
+                <p>
+                <span>HTML</span><span>90%</span>
+            </p>
+            <div class="progress">
+                <div class="progress-level" style="width:90%"></div>
+            </div>
+            </div>
+            <div class="item">
+                    <p>
+                    <span>CSS</span><span>80%</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-level" style="width:90%"></div>
+                </div>
+                </div>
+                <div class="item">
+                        <p>
+                        <span>jQuery</span><span>60%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progress-level" style="width:90%"></div>
+                    </div>
+                    </div>
+                    <div class="item">
+                            <p>
+                            <span>PhotoShop</span><span>70%</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-level" style="width:90%"></div>
+                        </div>
+                        </div>
+
+    </div>
+</body>
+</html>
