@@ -10,7 +10,7 @@
         body {
             margin: 0;
             background-image: url(https://cdn.pixabay.com/photo/2020/06/08/23/17/nature-5276366_1280.jpg);
-            display:block;
+            display: block;
         }
 
         @font-face {
@@ -20,14 +20,22 @@
             font-style: normal;
         }
 
+        @font-face {
+            font-family: 'establishRoomNo703OTF';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRoomNo703OTF.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         h1 {
             font-family: 'BinggraeSamanco-Bold';
             font-size: 150px;
             color: black;
-            margin:0;
+            margin: 0;
         }
-        h2{
-            color:rgb(59, 1, 1);
+
+        h2 {
+            color: rgb(59, 1, 1);
         }
 
         .items {
@@ -36,9 +44,10 @@
             left: 50%;
             transform: translate(-50%, 10%);
             width: 100%;
-           
-            
+
+
         }
+
         .item {
             width: 250px;
             height: 200px;
@@ -46,22 +55,28 @@
             position: relative;
             margin: 10px;
         }
-        p{
+
+        p {
             width: 255px;
-        
-        
+            font-family: 'establishRoomNo703OTF';
+            text:12px;
+
+
         }
-        .info{
+
+        .info {
             margin: 30px;
-            color:white;
+            color: white;
         }
+
         .front,
         .back {
             position: absolute;
             transition: 1s;
             top: 0;
-           margin-bottom:50px;
+            margin-bottom: 50px;
         }
+
         .front {
             background-color: #333;
             text-align: center;
@@ -70,23 +85,27 @@
             z-index: 1;
             border-radius: 5px 5px 0 0;
         }
+
         .item:hover .front img {
             animation: ani 1s linear infinite;
         }
+
         .front h2 {
             margin-top: 0;
         }
+
         .back {
             background-color: #fff;
             color: #000;
             height: inherit;
             text-align: center;
-            width:250px;
+            width: 250px;
             padding-top: 20px;
             box-sizing: border-box;
             opacity: 0;
             border-radius: 0 0 5px 5px;
         }
+
         .back a {
             background-color: yellowgreen;
             color: #fff;
@@ -94,16 +113,19 @@
             border-radius: 20px;
             font-size: 13px;
         }
+
         .back a:hover {
             background-color: #000;
         }
+
         /* .item:hover .front {
             top: -50%;
         } */
         .item:hover .back {
             top: 100%;
-            opacity:1;
+            opacity: 1;
         }
+
         /* .item:hover .back {
             top: 50%;
             opacity: 1;
@@ -116,75 +138,78 @@
         50% {
             transform: scale(1.1)
         } */
-        
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="info">
-        <h1 >서해</h1>
-        <p>우리나라의 서쪽 바다<br>
-        인천, 태안, 부안등
-    <br>우리나라에서 가장 갯벌이 발달된 해이며, 전복, 미역, 천일염 생산량은 3면의 바다중 압도적이다.</p>
-    <h2>서해 여행지들</h2>
+            <h1>서해</h1>
+            <p>우리나라의 서쪽 바다<br>
+                인천, 태안, 부안등
+                <br>우리나라에서 가장 갯벌이 발달된 해이며, 전복, 미역, 천일염 생산량은 3면의 바다중 압도적이다.</p>
+            <h2>서해 여행지들</h2>
+        </div>
+
+        <div class="items">
+            <div class="item">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/03/17/33/autumn-sky-2813393_1280.jpg" width="100%"
+                        height="100%">
+                    <h2>강화도</h2>
+                </div>
+
+                <div class="back">
+                    <p>
+                        우리나라에 가장 북서쪽에 위치한 섬
+                    </p>
+                    <a href="https://www.ganghwa.go.kr/open_content/tour/" target="_blank">관광홈페이지보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/24/09/35/daebudo-2675980_1280.jpg" width="100%"
+                        height="100%">
+                    <h2>대부도</h2>
+                </div>
+
+                <div class="back">
+                    <p>
+                        경기도 안산시에 있는 경기도 바다
+                    </p>
+                    <a href="http://www.ddtown.co.kr/travel" target="_blank">관광홈페이지보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2021/02/12/02/53/glow-6007063_1280.jpg" width="100%"
+                        height="100%">
+                    <h2>안면도</h2>
+                </div>
+
+                <div class="back">
+                    <p>
+                        충남 태안군에 위치한 작은섬
+                    </p>
+                    <a href="https://www.taean.go.kr/tour.do" target="_blank">태안여행지보기</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2018/12/23/00/41/byeonsan-bando-3890476_1280.jpg"
+                        width="100%" height="100%">
+                    <h2>변산반도</h2>
+                </div>
+
+                <div class="back">
+                    <p>
+                        육상의 대자연과 해상의 청 정함을 아우르는 우리나라 유일의 반도형 국립공원
+                    </p>
+                    <a href="https://www.knps.or.kr/front/portal/visit/visitCourseMain.do?parkId=121800&menuNo=7020091" target="_blank">자세히 알아보기</a>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div class="items">
-        <div class="item">
-            <div class="front">
-                <img src="https://cdn.pixabay.com/photo/2017/10/03/17/33/autumn-sky-2813393_1280.jpg" width="100%" height="100%">
-                <h2>강화도</h2>
-            </div>
-            
-            <div class="back">
-                <p>
-                    우리나라에 가장 북서쪽에 위치한 섬
-                </p>
-                <a href="#">자세히 보기</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="front">
-                <img src="https://cdn.pixabay.com/photo/2017/08/24/09/35/daebudo-2675980_1280.jpg" width="100%" height="100%">
-                <h2>대부도</h2>
-            </div>
-            
-            <div class="back">
-                <p>
-                    경기도 안산시에 있는 경기도 바다
-                </p>
-                <a href="#">Sun</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="front">
-                <img src="https://cdn.pixabay.com/photo/2021/02/12/02/53/glow-6007063_1280.jpg" width="100%" height="100%">
-                <h2>안면도</h2>
-            </div>
-            
-            <div class="back">
-                <p>
-                    충남 태안군에 위치한 작은섬
-                </p>
-                <a href="#">Sun</a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="front">
-                <img src="https://cdn.pixabay.com/photo/2018/12/23/00/41/byeonsan-bando-3890476_1280.jpg" width="100%" height="100%">
-                <h2>변산반도</h2>
-            </div>
-            
-            <div class="back">
-                <p>
-                    dfgdfgfgsfsdgsdgsdsgsdgds
-                </p>
-                <a href="#">Sun</a>
-            </div>
-        </div>
-    </div>
-        </div>
 </body>
 
 </html>
