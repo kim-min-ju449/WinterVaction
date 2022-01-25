@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullscreen</title>
+    <style>
+        body{
+            margin:0;
+            font-weight: 300;
+            line-height:1.5em;
+            background-image: url(https://cdn.pixabay.com/photo/2021/12/13/14/57/trees-6868446_1280.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        body:before{
+            content:'';
+            position:absolute;
+            background-color: rgba(0, 0, 0, 0.308);
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            z-index:-1;
+        }
+        .search{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+        }
+        .search h1{
+            color:white;
+            text-align:center;
+            font-weight: normal;
+            font-size: 36px;
+        }
+        .search input[type=text]{
+            width:350px;
+            padding:15px;
+            border:none;
+            margin-right:-6px;
+            border-radius: 40px 0 0 40px;
+            outline: none;
+            padding-left:40px;
+            box-sizing: border-box;
+        }
+        .search input[type=submit]{
+            width:100px;
+            padding:15px;
+            border:none;
+            border-radius: 0 40px 40px 0;
+            background-color: orange;
+            color:#fff;
+            outline:none;
+            box-sizing: border-box;
+        }
+        .search input[type=submit]:hover{
+            background-color: darkgoldenrod;
+        }
+        .search input[type=text]::placeholder{  /*placeholder을 디자인 하는것*/
+            font-style:italic;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <form class="search">
+        <h1>What are you looking for?</h1>
+        <input type="text" placeholder="Type...">
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
