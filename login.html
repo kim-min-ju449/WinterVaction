@@ -6,7 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>네이버밴드로 로그인 UI 디자인</title>
     <style>
-        
+        body{
+            margin:0;
+            font-weight:300;
+            line-height: 1.5em;
+            font-size:15px;
+        }
+        a{
+            color:#222;
+            text-decoration:none;
+        }
+        .container{
+
+        }
+        header{
+            border-bottom:1px solid lightgreen;
+            background-color: #fff;
+            text-align:center;
+            padding-top:15px;
+            height:15px;
+            box-sizing:border-box;
+        }
+        section{
+            position:relative;
+            height: calc(100vh - 60px);
+        }
+        .login{
+            border: 1px solid red;
+            width:360px;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+        }
+        .login-type{}
+        .login-type h1{
+            margin:0;
+            text-align:center;
+            font-size:15px;
+        }
+        .login-footer{
+
+        }
     </style>
 </head>
 <body>
@@ -20,7 +60,7 @@
                     <h1>로그인</h1>
                     <a href="#">휴대폰 번호로 로그인</a>
                     <span class="or-text">또는</span>
-                    <a href="#">이메일로 로그인</a>
+                    <a href="#" class="btn">이메일로 로그인</a>
                     <a href="#">네이버로 로그인</a>
                     <a href="#">페이스북으로 로그인</a>
                     <a href="#">라인으로 로그인</a>
