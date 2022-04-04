@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+ <title>Spring</title>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+    }
+    .scene {
+      height: 100vh;
+      overflow: hidden;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 200;
+    }
+    .scene.one{
+      background-image: url(https://cdn.pixabay.com/photo/2022/03/25/17/54/sakura-7091532_960_720.jpg);
+    }
+    .scene.two{
+      background-image: url(https://cdn.pixabay.com/photo/2016/02/13/10/35/tulips-1197602_960_720.jpg);
+    }
+    .scene.three{
+      background-image: url(https://cdn.pixabay.com/photo/2014/01/22/19/44/flower-field-250016_960_720.jpg);
+    }
+    .scene header{
+      color:white;
+      max-width: 80%;
+      position: relative;
+      left:50%;
+      top:50%;
+      transform:translateX(-50%) translateY(-50%);
+      font-size:1.5rem;
+      text-align: center;
+    }
+    .scene header h1{
+      font-size:2rem;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+    .scene header h1:after{
+      content:'';
+      border-bottom:1px solid white;
+      width:8rem;
+      display: block;
+      margin:0 auto;
+      margin-top:1rem;
+    }
+  </style>
+</head>
+ 
+<body>
+  <section class="scene one">
+    <header>
+      <h1>Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+    </header>
+  </section>
+  <section class="scene two">
+    <header>
+      <h1>Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+    </header>
+  </section>
+  <section class="scene three">
+    <header>
+      <h1>Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+    </header>
+  </section>
+   
+</body>
+ 
+</html>

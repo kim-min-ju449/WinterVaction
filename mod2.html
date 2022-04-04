@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+ 
+<body>
+  <script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+  <script>
+    var first = new mojs.Shape({
+      shape: 'circle',
+      radius: {
+        0: 40
+      },
+      stroke: '#FFD8AA',
+      strokeWidth: {
+        20: 0
+      },
+      fill: 'none',
+      left: 0,
+      top: 0,
+      duration:300
+    });
+
+    document.addEventListener('click', function (e) {
+      first.tune({
+        x: e.pageX,
+        y: e.pageY
+      }).replay();
+      for(var i=0; i<seconds.length; i++){
+        seconds[i].generate().replay();
+      }
+    })
+  </script>
+</body>
+ 
+</html>
